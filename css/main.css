@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+}
+
+
+hr {
+  margin:2em 0;
+}
+
+
+#cards{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.cards {
+  margin-top: 20px;
+  width: 350px;
+  height: 280px;
+  margin-left: 10px;
+  background-color: white;
+      border-radius: 2px;
+
+
+    font-size: 16px;
+    min-height: 200px;
+    overflow: hidden;
+      box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
+}
+
+.mdl-card__title {
+  min-height: 170px;
+  color: #fff;
+  background:url('http://zst-ostrow.edu.pl/images/2016-17/druk1%20mae.jpg') no-repeat center / cover;
+}
+
+.title {
+  font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+  margin: 0;
+}
+
+.support {
+      color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+
+}
+
+.card--border {
+     border-top: 1px solid rgba(0, 0, 0, 0.0980392);
+  padding: 8px;
+}
+
+
+
+* { box-sizing: border-box; }
+
+.carousel {
+  background: #EEE;
+  margin-top: 20px;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+#login {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+}
+
+.maps iframe{
+    pointer-events: none;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2;
+  min-width: 320px;
+}
+
+.container-header {
+  width: 100%;
+  height: 150px;
+  background-color: #336699;
+  color: white;
+  text-align: right;
+  z-index: -1;
+}
+
+.container-header h1 {
+  padding: 40px 10px 0 0px;
+}
+
+.container-header h2 {
+  padding-right: 10px;
+}
+
+#menu {
+  background-color: white;
+  width: 100wh;
+  height: 70px;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 10;
+
+}
+
+#logo {
+  width: 100px;
+  padding-top: 4px;
+  padding: 12.5;
+  float: left;
+}
+
+#menu ul {
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+#menu li {
+  float: left;
+
+}
+
+#menu li a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+   font-size: 16px;
+
+  padding: 24.5px 10px 24.5px 10px;
+  margin: 0 14.5px 0 14.5px;
+  white-space: nowrap;
+}
+
+#menu li a:hover {
+  border-bottom: 2px solid #336699;
+}
+
+#menu ul li:hover ul {
+  display:block;
+  height: 100%;
+  max-width: 135px;
+
+
+
+      }
+
+
+#menu ul li ul {
+  display:none;
+  height: 0;
+  z-index: 2;
+}
+
+#menu ul li ul li {
+  background-color: white;
+  width: 100%;
+
+}
+
+
+.active {
+  border-bottom: 2px solid #336699;
+}
+
+.arrow-box {
+  display: inline-block;
+  padding: 15px;
+}
+
+.arrow {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  width: 6px; height: 6px;
+  transform: rotate(45deg);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#c-button--slide-left {
+  cursor: pointer;
+  height: 30px;
+  margin: 18px;
+  float: left;
+  background: transparent;
+  border: none;
+  display: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.c-menu__close {
+  display: none;
+}
+
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#slider {
+  background-color: white;
+}
+
+@media (max-width: 760px){
+
+  #logo {
+    margin: 0 auto;
+}
+
+  #menu ul {
+    display: block;
+}
+
+  #menu ul li ul li {
+    margin-left: 10px;
+
+}
+
+#c-button--slide-left {
+  display: initial;
+}
+
+.c-menu__close {
+  display: initial;
+}
+
+  #c-menu--slide-left
+{
+  background-color: white;
+  width:;
+  height: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+  #c-menu--slide-left li {
+
+    float: none;
+    display: block;
+  }
+  #c-menu--slide-left a {
+    padding-left: 30px;
+    /*max-width: 50px;*/
+    margin: 0;
+}
+
+/**
+ * Menu overview.
+ */
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: #67b5d1;
+  transition: transform 0.3s;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close {
+  height: 70px;
+  background-color: white;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-bottom: 1px solid #eaedef;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close:focus {
+  outline: none;
+}
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/**
+ * Mask component
+ */
+
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* END 1 */
+
+.c-menu--slide-left {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    width: 250px;
+  }
+}
+
+.c-menu--slide-left .c-menu__close {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+/* END 2 */
+
+.c-menu--slide-left {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    transform: translateX(-300px);
+  }
+}
+
+.c-menu--slide-left.is-active {
+  transform: translateX(0);
+}
+
+/* END 3 */
+}
+
+#news {
+  margin-top: 100px;
+}
+
+#map {
+  padding: 0;
+}
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
+  min-width: 320px;
+}
+
+/* menu icon */
+
+#menu .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 18px 10px;
+  margin: 10px 10px;
+  position: relative;
+  user-select: none;
+  border-radius: 20px;
+}
+
+.navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navicon:before,
+.navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navicon:before {
+  top: 5px;
+}
+
+.navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.c-hamburger {
+  background: white;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: black;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: black;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -20px;
+}
+
+.c-hamburger span::after {
+  bottom: -20px;
+}
+
+.test {
+  margin-bottom: 60px;
+}
+
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.waves-effect.waves-light .waves-ripple {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.waves-effect.waves-red .waves-ripple {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+
+.waves-effect.waves-yellow .waves-ripple {
+  background-color: rgba(255, 235, 59, 0.7);
+}
+
+.waves-effect.waves-orange .waves-ripple {
+  background-color: rgba(255, 152, 0, 0.7);
+}
+
+.waves-effect.waves-purple .waves-ripple {
+  background-color: rgba(156, 39, 176, 0.7);
+}
+
+.waves-effect.waves-green .waves-ripple {
+  background-color: rgba(76, 175, 80, 0.7);
+}
+
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(51, 102, 153, 0.7)
+}
+
+.waves-effect.waves-teal .waves-ripple {
+  background-color: rgba(0, 150, 136, 0.7);
+}
+
+/* Firefox Bug: link not triggered */
+a.waves-effect .waves-ripple {
+  z-index: -1;
+}
