@@ -62,10 +62,6 @@ hr {
   padding: 8px;
 }
 
-.card2 {
-
-}
-
 
 
 * { box-sizing: border-box; }
@@ -514,7 +510,7 @@ body.has-active-menu {
 }
 
 .test {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 .waves-effect {
