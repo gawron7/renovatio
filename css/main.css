@@ -198,6 +198,12 @@ body {
 }
 
 
+.portrait {
+  border-radius: 1000px;
+  float: left;
+}
+
+
 .active {
   border-bottom: 2px solid #336699;
 }
