@@ -1,112 +1,10 @@
 * {
   margin: 0;
+  box-sizing: border-box
 }
-
 
 hr {
-  margin:2em 0;
-}
-
-
-#cards{
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-
-}
-
-.cards {
-  margin-top: 20px;
-  width: 350px;
-  height: 280px;
-  margin-left: 10px;
-  background-color: white;
-      border-radius: 2px;
-
-
-    font-size: 16px;
-    min-height: 200px;
-    overflow: hidden;
-      box-sizing: border-box;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
-}
-
-.mdl-card__title {
-  min-height: 170px;
-  color: #fff;
-  background:url('../img/druk1mae.jpg') no-repeat center / cover;
-}
-
-.title {
-  font-size: 24px;
-    font-weight: 300;
-    line-height: normal;
-  margin: 0;
-}
-
-.support {
-      color: rgba(0,0,0,.87);
-    font-size: 13px;
-    line-height: 18px;
-    overflow: hidden;
-    padding: 16px;
-    width: 90%;
-
-}
-
-.card--border {
-     border-top: 1px solid rgba(0, 0, 0, 0.0980392);
-  padding: 8px;
-}
-
-.card2 {
-
-}
-
-
-
-* { box-sizing: border-box; }
-
-.carousel {
-  background: #EEE;
-  margin-top: 20px;
-  z-index: 1;
-  padding-bottom: 10px;
-}
-
-#login  {
-  width: 40px;
-  height: 40px;
-}
-
-#login img {
-  float: left;
-}
-
-.maps iframe{
-    pointer-events: none;
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  margin: 2em 0;
 }
 
 body {
@@ -132,6 +30,11 @@ body {
   padding-right: 100px;
 }
 
+#flex {
+  display: flex;
+  flex-direction: row;
+}
+
 #menu {
   background-color: white;
   width: 100wh;
@@ -140,13 +43,6 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   z-index: 10;
-
-
-}
-
-#flex {
-  display: flex;
-  flex-direction: row;
 }
 
 #logo {
@@ -203,6 +99,32 @@ body {
   background-color: white;
   width: 100%;
 
+}
+
+.carousel {
+  background: #EEE;
+  margin-top: 20px;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 
 
@@ -264,9 +186,104 @@ body {
   top: 0;
 }
 
+#login  {
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#login img {
+  width: 50px;
+  padding-right: 10px;
+}
+
 #slider {
   background-color: white;
 }
+
+#cards{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.cards {
+  margin-top: 20px;
+  width: 350px;
+  height: 280px;
+  margin-left: 10px;
+  background-color: white;
+      border-radius: 2px;
+
+
+    font-size: 16px;
+    min-height: 200px;
+    overflow: hidden;
+      box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
+}
+
+.mdl-card__title {
+  min-height: 170px;
+  color: #fff;
+  background:url('../img/druk1mae.jpg') no-repeat center / cover;
+}
+
+.title {
+  font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+  margin: 0;
+}
+
+.support {
+      color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+
+}
+
+.card--border {
+     border-top: 1px solid rgba(0, 0, 0, 0.0980392);
+  padding: 8px;
+}
+
+.card2 {
+
+}
+
+
+#news {
+  margin-top: 100px;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#map {
+  padding: 0;
+}
+
+.maps iframe{
+    pointer-events: none;
+}
+
+
 
 @media (max-width: 760px){
 
@@ -417,21 +434,6 @@ body.has-active-menu {
 }
 
 /* END 3 */
-}
-
-#news {
-  margin-top: 100px;
-  padding: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-#map {
-  padding: 0;
 }
 
 .card {
