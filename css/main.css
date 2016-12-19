@@ -77,11 +77,13 @@ hr {
   padding-bottom: 10px;
 }
 
-#login {
-  float: right;
+#login  {
   width: 40px;
   height: 40px;
-  background-color: black;
+}
+
+#login img {
+  float: left;
 }
 
 .maps iframe{
@@ -123,11 +125,11 @@ body {
 }
 
 .container-header h1 {
-  padding: 40px 10px 0 0px;
+  padding: 40px 100px 0 0px;
 }
 
 .container-header h2 {
-  padding-right: 10px;
+  padding-right: 100px;
 }
 
 #menu {
@@ -135,10 +137,16 @@ body {
   width: 100wh;
   height: 70px;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
   z-index: 10;
 
+
+}
+
+#flex {
+  display: flex;
+  flex-direction: row;
 }
 
 #logo {
@@ -198,9 +206,13 @@ body {
 }
 
 
-.portrait {
+.portrait img {
   border-radius: 1000px;
-  float: left;
+  width: 200px;
+}
+
+.text {
+  margin-left: 100px;
 }
 
 
@@ -409,7 +421,14 @@ body.has-active-menu {
 
 #news {
   margin-top: 100px;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 #map {
   padding: 0;
