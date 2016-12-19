@@ -37,7 +37,7 @@ hr {
 .mdl-card__title {
   min-height: 170px;
   color: #fff;
-  background:url('http://zst-ostrow.edu.pl/images/2016-17/druk1%20mae.jpg') no-repeat center / cover;
+  background:url('../img/druk1mae.jpg') no-repeat center / cover;
 }
 
 .title {
