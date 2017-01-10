@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header id="site-header">
+  <div class="container-header">
+    <h1>Zespół Szkół Technicznych</h1>
+    <h2>w Ostrowie Wielkopolskim</h2>
+  </div> <!-- Fix margin after menu stick -->
+
+  <!-- Main menu -->
+  <nav id="menu" class="main-nav">
+    <div id="c-mask" class="c-mask"></div>
+
+    <div id="flex">
+    <!-- Hamburger icon -->
+    <div id="o-wrapper" class=""> <!-- Del this -->
+      <button id="c-button--slide-left">
+        <span class="navicon"></span>
+      </button>
+    </div>
+
+    <a href="index.html"><img id="logo" src="img/logo_zst_500x350.png"></a>
+    <ul id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+      <button class="c-menu__close">logo</button>
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="aktualnosci.html">Aktualności</a></li>
+      <li><a href="#">Dla ucznia</a></li>
+      <li><a class="activee" href="galeria.html">Galeria</a></li>
+      <li><a href="#">O szkole</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+    <div id="login"><img src="img/ic_account_circle_black_24dp_2x.png"></div>
+  </div>
+  </nav>
+</header>
+<div class="clear"></div>
+
+
+
+<div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+		<img src="http://zst-ostrow.edu.pl/images/2016/drzwiotwarteleft/IMG_9742.JPG" data-full="http://zst-ostrow.edu.pl/images/2016/drzwiotwarteleft/IMG_9742.JPG" class="m-p-g__thumbs-img" />
+		<img src="http://zst-ostrow.edu.pl/images/2016-17/koty2016/IMG_9130.jpg" data-full="http://zst-ostrow.edu.pl/images/2016-17/koty2016/IMG_9130.jpg" class="m-p-g__thumbs-img" />
+		<img src="http://zst-ostrow.edu.pl/images/praktyki_poznan/3.JPG" data-full="http://zst-ostrow.edu.pl/images/praktyki_poznan/3.JPG" class="m-p-g__thumbs-img" />
+		<img src="http://zst-ostrow.edu.pl/images/boszkowo/DSC_0142.JPG" data-full="http://zst-ostrow.edu.pl/images/boszkowo/DSC_0142.JPG" class="m-p-g__thumbs-img" />
+		<img src="http://zst-ostrow.edu.pl/images/bitwa_taneczna2b/1.jpg" data-full="http://zst-ostrow.edu.pl/images/bitwa_taneczna2b/1.jpg" class="m-p-g__thumbs-img" />
+		<img src="http://unsplash.it/560/500?image=677" data-full="http://unsplash.it/1120/1000?image=677" class="m-p-g__thumbs-img" />
+		<img src="http://unsplash.it/670/410?image=401" data-full="http://unsplash.it/1340/820?image=401" class="m-p-g__thumbs-img" />
+		<img src="http://unsplash.it/620/340?image=623" data-full="http://unsplash.it/1240/680?image=623" class="m-p-g__thumbs-img" />
+		<img src="http://unsplash.it/790/390?image=339" data-full="http://unsplash.it/1580/780?image=339" class="m-p-g__thumbs-img" />
+	</div>
+
+	<div class="m-p-g__fullscreen"></div>
+</div>
+
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"</script>
+
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/flickity.pkgd.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
