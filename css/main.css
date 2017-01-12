@@ -10,7 +10,6 @@ hr {
 body {
   font-family: 'Roboto', sans-serif;
   background: #f2f2f2;
-  min-width: 320px;
   color: rgb(68, 68, 68);
 }
 
@@ -20,6 +19,11 @@ body {
     position: relative;
       overflow: hidden;
 
+
+
+}
+
+.parallax {
 
 }
 #header2 img {
@@ -36,7 +40,6 @@ body {
     height: 100%;
     display: none;
     color: #FFF;
-      overflow: hidden;
 }
 #header2 .after {
     display: block;
@@ -53,11 +56,11 @@ body {
 }
 
 .container-header h1 {
-  padding: 40px 100px 0 0px;
+  padding: 40px 75px 0 0px;
 }
 
 .container-header h2 {
-  padding-right: 100px;
+  padding-right: 75px;
 }
 
 #flex {
@@ -67,12 +70,11 @@ body {
 
 #menu {
   background-color: white;
-  width: 100wh;
   height: 70px;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   padding-left: 100px;
   padding-right: 100px;
-  z-index: 10;
+  z-index: 2;
 }
 
 #logo {
@@ -206,18 +208,24 @@ body {
 }
 
 #login  {
+  margin-right: 30px;
   margin-top: 15px;
   width: 40px;
   height: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
 #login img {
   width: 50px;
   padding-right: 10px;
+}
+
+#login a {
+
+  text-decoration: none;
+  color: black;
 }
 
 #slider {
@@ -250,9 +258,11 @@ body {
 }
 
 .mdl-card__title {
+  width: 100%;
+
+  max-height: 170px;
   min-height: 170px;
   color: #fff;
-  background:url('../img/druk1mae.jpg') no-repeat center / cover;
 }
 
 .title {
@@ -356,23 +366,66 @@ body {
 
 
 
-@media (max-width: 760px){
+@media (max-width: 1100px){
 
-  #logo {
-    margin: 0 auto;
+#menu {
+  width: 100%;
+  padding: 0;
 }
 
+.container-header h1 {
+  padding: 40px 10px 0 0px;
+}
+
+.container-header h2 {
+  padding-right: 10px;
+}
+
+#menu li a {
+  margin-left: 2px
+}
+
+#menu li a:hover {
+  border-bottom: 0px;
+  margin-left: 0;
+}
+
+#menu li a:hover {
+  border-left: 2px solid #336699;
+}
+
+.active {
+  border-bottom: 0px;
+  border-left: 2px solid #336699;
+}
+
+
+#flex {
+  display: initial;
+}
+
+
+#login {
+  margin-right: 20%;
+  float: right;
+}
+
+#logo {
+  margin-left: 17%;
+}
   #menu ul {
     display: block;
 }
 
-  #menu ul li ul li {
-    margin-left: 10px;
+  #menu ul li {
+    margin-left: 0;
+    width: 100%;
 
 }
 
 #c-button--slide-left {
   display: initial;
+  margin-left: 10%;
 }
 
 .c-menu__close {
@@ -607,207 +660,7 @@ body.has-active-menu {
 }
 
 
-/*! Flickity v2.0.5
-http://flickity.metafizzy.co
----------------------------------------------- */
 
-.flickity-enabled {
-  position: relative;
-}
-
-.flickity-enabled:focus { outline: none; }
-
-.flickity-viewport {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-}
-
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* draggable */
-
-.flickity-enabled.is-draggable {
-  -webkit-tap-highlight-color: transparent;
-          tap-highlight-color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-
-/* ---- previous/next buttons ---- */
-
-.flickity-prev-next-button {
-  position: absolute;
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  background: hsla(0, 0%, 100%, 0.75);
-  cursor: pointer;
-  /* vertically center */
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.flickity-prev-next-button:hover { background: white; }
-
-.flickity-prev-next-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px #09F;
-}
-
-.flickity-prev-next-button:active {
-  opacity: 0.6;
-}
-
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
-/* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
-}
-.flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
-}
-
-.flickity-prev-next-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
-}
-
-.flickity-prev-next-button svg {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 60%;
-  height: 60%;
-}
-
-.flickity-prev-next-button .arrow {
-  fill: #333;
-}
-
-/* ---- page dots ---- */
-
-.flickity-page-dots {
-  position: absolute;
-  width: 100%;
-  bottom: -25px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  line-height: 1;
-}
-
-.flickity-rtl .flickity-page-dots { direction: rtl; }
-
-.flickity-page-dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 8px;
-  background: #333;
-  border-radius: 50%;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-.flickity-page-dots .dot.is-selected {
-  opacity: 1;
-}
-
-#flex {
-  display: flex;
-  flex-direction: row;
-}
-
-#menu {
-  background-color: white;
-  width: 100wh;
-  height: 70px;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  padding-left: 100px;
-  padding-right: 100px;
-  z-index: 10;
-}
-
-#logo {
-  width: 100px;
-  padding-top: 4px;
-  padding: 12.5;
-  float: left;
-}
-
-#menu ul {
-  margin: 0 auto;
-  list-style-type: none;
-  padding: 0;
-  display: inline-block;
-}
-
-#menu li {
-  float: left;
-
-}
-
-#menu li a {
-  display: block;
-  text-decoration: none;
-  color: rgb(68, 68, 68);
-   font-size: 16px;
-
-  padding: 24.5px 10px 24.5px 10px;
-  margin: 0 14.5px 0 14.5px;
-  white-space: nowrap;
-}
-
-#menu li a:hover {
-  border-bottom: 2px solid #336699;
-}
-
-#menu ul li:hover ul {
-  display:block;
-  height: 100%;
-  max-width: 135px;
-
-
-
-      }
-
-
-#menu ul li ul {
-  display:none;
-  height: 0;
-  z-index: 2;
-}
-
-#menu ul li ul li {
-  background-color: white;
-  width: 100%;
-
-}
 
 #form, #form span, #form h1 {
 	box-sizing: border-box;
@@ -825,7 +678,7 @@ http://flickity.metafizzy.co
 #form {
 	background-color: white;
 	font-family: 'roboto', sans-serif;
-	width: 440px;
+	max-width: 400px;
 	margin: 100px auto 0;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 	padding: 0 0 40px;
@@ -846,7 +699,7 @@ http://flickity.metafizzy.co
 	font: inherit;
 	font-size: 0.8em;
 	margin: 28px 25px 10px;
-	width: 400px;
+	max-width: 380px;
 	display: block;
 	border: none;
 	padding: 20px 0 10px;
@@ -1118,7 +971,7 @@ http://flickity.metafizzy.co
 }
 .m-p-g__controls-arrow {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   width: 20%;
   height: 100vh;
@@ -1145,7 +998,7 @@ http://flickity.metafizzy.co
   position: absolute;
   top: 3vh;
   left: 3vw;
-  z-index: 5;
+  z-index: 15;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
