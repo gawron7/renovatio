@@ -1,11 +1,4 @@
-<?php
-session_start();
-if(!isset($_SESSION['online2'])) {
-  header('Location: index.php');
-}
-  ?>
-
-  <!doctype html>
+<!doctype html>
  <html>
  <head>
    <meta charset="utf-8">
@@ -71,7 +64,9 @@ if(!isset($_SESSION['online2'])) {
           <div id="staff">
 
             <div class="box">
-              <img src="img/Logo-Cisco.jpg">
+              <div class="img_box">
+                <img src="img/Logo-Cisco.jpg">
+              </div>
               <h1> Novell Academic Training Partner (NATP)</h1>
               <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
                 Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.

@@ -424,6 +424,10 @@ body {
   border-left: 2px solid #336699;
 }
 
+.img_box {
+  height: 100px;
+}
+
 
 #flex {
   display: initial;
@@ -724,7 +728,7 @@ body.has-active-menu {
 	font: inherit;
 	font-size: 0.8em;
 	margin: 28px 25px 10px;
-	max-width: 380px;
+	width: 350px;
 	display: block;
 	border: none;
 	padding: 20px 0 10px;
@@ -774,7 +778,7 @@ body.has-active-menu {
 	visibility: hidden;
 	font-family: 'roboto', sans-serif;
 	font-size: 0.6em;
-	width: 400px;
+	width: 420px;
 	margin-left: 25px;
 	margin-top: -5px;
 	color: white;
@@ -841,7 +845,7 @@ body.has-active-menu {
 	width: 200px;
 	height: 40px;
 	color: white;
-	margin: 30px 0 0 120px;
+	margin: 30px 0 0 100px;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
