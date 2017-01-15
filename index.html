@@ -1,52 +1,76 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+session_start();
+if(!isset($_SESSION['online2'])) {
+  header('Location: index.php');
+}
+  ?>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header id="site-header">
-          <div class="container-header">
-            <h1>Zespół Szkół Technicznych</h1>
-            <h2>w Ostrowie Wielkopolskim</h2>
-          </div> <!-- Fix margin after menu stick -->
+  <!doctype html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <style>
+   td {
+         border-bottom: 1px solid #e0e0e0;
+         border-collapse: collapse;
+         padding: 10px;
+         margin: 0px;
 
-          <!-- Main menu -->
-          <nav id="menu" class="main-nav">
-            <div id="c-mask" class="c-mask"></div>
-            <div id="flex">
-              <!-- Hamburger icon -->
-              <div id="o-wrapper" class=""> <!-- Del this -->
-                <button id="c-button--slide-left">
-                  <span class="navicon"></span>
-                </button>
-              </div>
+   }
 
-              <a href=""><img id="logo" alt="logo_zst" src="img/logo_zst_500x350.png"></a>
-              <ul id="c-menu--slide-left" class="c-menu c-menu--slide-left">
-                <button class="c-menu__close">logo</button>
-                <li class="active"><a  href="index.html">Strona Główna</a></li>
-                <li><a href="aktualnosci.html">Aktualności</a></li>
-                <li><a href="#">Dla ucznia</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="#">O szkole</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-              </ul>
-              <div id="login"><img src="img/ic_account_circle_24dp_2x.png"><a href="http://localhost/dziennik/">Login</a></div>
-          </div>
-          </nav>
-        </header>
+   td::last-child {
+     border-bottom: 0px;
+   }
+   table {
+     background-color: white;
+   }
+
+   #boxx {
+     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+   }
+   body {
+     font-family: 'Roboto', sans-serif;
+     background-color: #f2f2f2;
+   }
+
+   </style>
+ </head>
+ <body>
+   <header id="site-header">
+ <div class="container-header">
+ <h1>Zespół Szkół Technicznych</h1>
+ <h2>w Ostrowie Wielkopolskim</h2>
+ </div> <!-- Fix margin after menu stick -->
+
+ <!-- Main menu -->
+ <nav id="menu" class="main-nav">
+ <div id="c-mask" class="c-mask"></div>
+
+ <div id="flex">
+ <!-- Hamburger icon -->
+ <div id="o-wrapper" class=""> <!-- Del this -->
+ <button id="c-button--slide-left">
+   <span class="navicon"></span>
+ </button>
+ </div>
+
+ <a href="index.html"><img id="logo" src="img/logo_zst_500x350.png"></a>
+ <ul id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+ <button class="c-menu__close">logo</button>
+ <li><a class="activee" href="index.html">Strona Główna</a></li>
+ <li><a href="aktualnosci.html">Aktualności</a></li>
+ <li><a href="galeria.html">Galeria</a></li>
+ <li><a href="kontakt.html">Kontakt</a></li>
+ </ul>
+ <div id="login"><img src="img/ic_account_circle_24dp_2x.png"><a href="">Login</a></div>
+ </div>
+ </nav>
+ </header>
+ <div class="clear"></div>
         <div id="header2">
           <div class="parallax">
           <img src="img/school-images-20.jpg">
@@ -68,21 +92,25 @@
         </section>
 
         <section id="academies" class="card">
-
-          <h1>Akedemie infromatyczne</h1>
-          <p>Zainwestuj w siebie i w swoją przyszłość!
-
-Nasza szkoła posiada tytuły: Novell Academic Training Partner (NATP) oraz Lokalna Akademia CISCO. Umożliwia to uczniom ukończenie autoryzowanych szkoleń Novella i CISCO oraz zdobycie tytułów: SUSE Linux Enterprise oraz IT ESSENTIALS: PC Software and Hardware
-
-Program NATP i Cisco zapewniają kursy, testy, materiały szkoleniowe przygotowane przez najlepszych amerykańskich specjalistów, spolszczone i dostosowane do wymagań polskich programów nauczania.
-</p>
           <div id="staff">
 
             <div class="box">
-              <img src="img/Logo-Cisco.png">
+              <img src="img/Logo-Cisco.jpg">
+              <h1> Novell Academic Training Partner (NATP)</h1>
+              <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+                Ut molestie a, ultricies porta urna.
+                </p>
             </div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">
+              <div class="img_box">
+                <img src="img/novel.jpg">
+              </div>
+              <h1>Lokalna Akademia CISCO.</h1>
+              <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+                Ut molestie a, ultricies porta urna.
+                </p>
           </div>
         </section>
 
