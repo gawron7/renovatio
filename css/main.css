@@ -7,6 +7,11 @@ hr {
   margin: 2em 0;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: #f2f2f2;
@@ -315,6 +320,12 @@ body {
   color: rgb(68, 68, 68);
 }
 
+@media (max-width: 800px) {
+  #news {
+    flex-direction: column;
+  }
+}
+
 .portrait img {
   width: 200px;
   border-radius: 1000px;
@@ -355,6 +366,13 @@ body {
 #academies img {
   margin: 0 auto;
   width: 200px;
+}
+
+.img_box {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 200px;
 }
 
 #staff {
@@ -424,9 +442,7 @@ body {
   border-left: 2px solid #336699;
 }
 
-.img_box {
-  height: 100px;
-}
+
 
 
 #flex {
@@ -490,9 +506,7 @@ body {
   transition: transform 0.3s;
 }
 
-/**
- * Close button resets.
- */
+
 .c-menu__close {
   height: 70px;
   background-color: white;
@@ -507,26 +521,16 @@ body {
   border-bottom: 1px solid #eaedef;
 }
 
-/**
- * Close button resets.
- */
+
 .c-menu__close:focus {
   outline: none;
 }
 
-/**
- * Body states.
- *
- * When a menu is active, we want to hide the overflows on the body to prevent
- * awkward document scrolling.
- */
+
 body.has-active-menu {
   overflow: hidden;
 }
 
-/**
- * Mask component
- */
 
 .c-mask {
   position: fixed;
@@ -771,8 +775,6 @@ body.has-active-menu {
 	transition: border-bottom 0.3s ease, background 0.3s ease;
 }
 
-/* koniec */
-
 #form input[type="email"] ~ span.validation-text {
 	position: absolute;
 	visibility: hidden;
@@ -854,18 +856,6 @@ body.has-active-menu {
 	box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*a {
-  display: inline-block;
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  font-family: 'roboto', sans-serif;
-  text-decoration: none;
-  color: $base;
-  i {
-    margin-right: 5px;
-  }
-}*/
 #form a {
 	width: 42px;
 	height: 42px;
