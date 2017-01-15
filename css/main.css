@@ -91,7 +91,7 @@ body {
   z-index: 2;
 }
 
-#logo {
+.logo {
   width: 100px;
   padding-top: 4px;
   padding: 12.5;
@@ -460,7 +460,7 @@ body {
   float: right;
 }
 
-#logo {
+.logo {
   margin-left: 17%;
 }
   #menu ul {
@@ -513,7 +513,7 @@ body {
 
 
 .c-menu__close {
-  height: 70px;
+  height: 90px;
   background-color: white;
   font-size: 14px;
   border: none;
