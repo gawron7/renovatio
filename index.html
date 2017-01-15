@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" type="text/css" href="css/main.css">
    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-   </style>
+
  </head>
  <body>
    <header id="site-header">
@@ -43,7 +43,7 @@
         <div id="header2">
           <div class="parallax">
           <img src="img/school-images-20.jpg">
-          <div class="after">c</div>
+          <div class="after"><div class="element"></div></div>
         </div>
         </div>
 
@@ -95,6 +95,15 @@
                 <script src="js/jquery-1.12.0.min.js"></script>
                 <script src="js/flickity.pkgd.js"></script>
                 <script src="js/main.js"></script>
+                <script src="js/typed.js"></script>
+             <script>
+               $(function(){
+                   $(".element").typed({
+                     strings: ["Lorem ipsum dolor sit amet enim.", "Suspendisse a pellentesque dui, non felis.", "Maecenas malesuada elit lectus felis"],
+                     typeSpeed: 50
+                   });
+               });
+               </script>
 
 
     </body>
